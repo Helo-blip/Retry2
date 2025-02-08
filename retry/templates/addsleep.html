@@ -1,0 +1,17 @@
+<body>
+    <form method="post" action="/addsleep">
+        <label for=""><h3>USER ID  : </h3></label>
+        <input name="uId" type="text" placeholder="1" pattern="^[0-9]+$" title="INVALID">
+        <br>
+        <label for=""><h3>CURRENT DATE : </h3></label>
+        <input name="cDate" type="text" placeholder="3/2/2024">
+        <br>
+        <label for=""><h3>START TIME : </h3></label>
+        <input name="start_time" type="text" placeholder="8:00" pattern="^[0-9]{1,2}:[0-9]{1,2}$" title="INVALID">
+        <br>
+        <label for=""><h3>END TIME : </h3></label>
+        <input name="end_time" type="text" placeholder="9:30" pattern="^[0-9]{1,2}:[0-9]{1,2}$" title="INVALID">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>

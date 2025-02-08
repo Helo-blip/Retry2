@@ -1,0 +1,22 @@
+<body>
+    <table>
+        <tr>
+            <th><h3>SLEEP ID</h3></th>
+            <th><h3>DATE</h3></th>
+            <th><h3>START DATE </h3></th>
+            <th><h3>END DATE </h3></th>
+            <th><h3>DURATION </h3></th>
+            <th><h3>USER ID</h3></th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{row['sid']}}</td>
+            <td>{{row['cur_date']}}</td>
+            <td>{{row['start_time']}}</td>
+            <td>{{row['end_time']}}</td>
+            <td>{{row['duration']}}</td>
+            <td>{{row['user_id']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>

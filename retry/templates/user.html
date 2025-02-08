@@ -1,0 +1,18 @@
+<body>
+    <table>
+        <tr>
+            <th><h3>USER ID</h3></th>
+            <th><h3>USER NAME </h3></th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{row['id']}}</td>
+            <td>{{row['name']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <hr>
+    <h3>GOTO SLEEP INFO</h3>
+    <a href='/sleep'>SLEEP PAGE</a>
+</body>
